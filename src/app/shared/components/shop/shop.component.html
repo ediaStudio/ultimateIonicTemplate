@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            {{"shop" | translate}}
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-icon (click)="close()"
+                      name="close"
+                      size="default" slot="icon-only"></ion-icon>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-grid *ngIf="isLoading || !currentUser" class="ion-no-padding" style="height: 100%;">
+        <ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%;">
+            <ion-col class="ion-text-center">
+                <ion-spinner name="lines"></ion-spinner>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <div *ngIf="currentUser" class="container">
+
+        <ng-container *ngIf="creditsProducts?.length">
+            <div class="type-title">
+                {{"credits" | translate}}
+            </div>
+            <div class="products-container">
+                <div (click)="checkout(p.id)" *ngFor="let p of creditsProducts" class="product-block">
+                    <div class="title">
+                        {{p.title}}
+                    </div>
+                    <div class="subtitle">
+                        {{"getCredits" | translate:{count: getConsumableCount(p.id)} }}
+                    </div>
+                    <div class="price">
+                        {{getProductPrice(p)}}
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="dailyRewards?.length">
+            <div class="type-title">
+                {{"dailyRewards" | translate}}
+            </div>
+            <div class="products-container">
+                <div (click)="getDailyReward()" *ngFor="let p of dailyRewards"
+                     class="action-block daily-rewards">
+                    <div class="left-block">
+                        <div *ngIf="p?.title" class="block-title">
+                            {{p.title | translate}}
+                        </div>
+
+                        <div *ngIf="p?.description" class="subtitle">
+                            {{p.description | translate}}
+                        </div>
+                        <ion-chip *ngIf="creditsCountdown"
+                                  [outline]="true">
+                            {{"nextBonus" | translate:{count: creditsCountdown} }}
+                        </ion-chip>
+                        <ion-spinner *ngIf="creditsLoading"
+                                     name="dots"></ion-spinner>
+
+                    </div>
+
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+</ion-content>

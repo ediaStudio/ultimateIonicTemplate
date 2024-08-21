@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            {{"home" | translate}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-button (click)="displayBanner()"
+                [disabled]="!bannerVisible"
+                class="ion-margin-top"
+                color="primary"
+                expand="full"
+                shape="round">
+        {{"displayBanner" | translate}}
+    </ion-button>
+    <ion-button (click)="removeBanner()"
+                [disabled]="bannerVisible"
+                class="ion-margin-top"
+                color="secondary"
+                expand="full"
+                shape="round">
+        {{"removeBanner" | translate}}
+    </ion-button>
+    <ion-button (click)="displayInterstitial()"
+                class="ion-margin-top"
+                color="tertiary"
+                expand="full"
+                shape="round">
+        {{"displayInterstitial" | translate}}
+    </ion-button>
+    <ion-button (click)="watchRewards()"
+                [disabled]="!rewardReady"
+                class="ion-margin-top"
+                color="medium"
+                expand="full"
+                shape="round">
+        {{"watchRewards" | translate}}
+    </ion-button>
+
+</ion-content>
+
+<!--This is important or google not gonna approve your app because the ads banner will be over the text-->
+<ion-footer *ngIf="bannerVisible" class="">
+</ion-footer>

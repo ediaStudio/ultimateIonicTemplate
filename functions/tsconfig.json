@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "baseUrl": "./",
+    "paths": {
+      "@models/*": [
+        "./src/models/*"
+      ],
+      "@helpers/*": [
+        "./src/helpers/*"
+      ],
+      "@project/*": [
+        "./src/project/*"
+      ]
+    }
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+  ]
+}
