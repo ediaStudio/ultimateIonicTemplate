@@ -5,6 +5,8 @@ export enum ELang {
     es = "es",
 }
 
+// Add new languages here + don't forget to also create a json file in
+// src/assets/i18n/langCode.json
 export const LANGUAGES = [
     {
         name: 'English',
