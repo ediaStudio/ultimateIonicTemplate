@@ -3,7 +3,8 @@ import * as admin from 'firebase-admin';
 import * as functions from 'firebase-functions';
 
 admin.initializeApp({
-    credential: admin.credential.cert("src/files/infinity-quiz-d08fc-firebase-adminsdk-5kj9n-46f9fa9d31.json"),
+    // TODO replace by your own service account file
+    credential: admin.credential.cert("src/files/my-first-demo-a7635-firebase-adminsdk-77epm-a65583f68a.json"),
     // storageBucket: BUCKET_NAME,
 });
 

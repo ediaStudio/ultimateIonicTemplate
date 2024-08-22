@@ -25,12 +25,11 @@ import {EPlatform} from "@models/general";
 export class AdMobService {
 
     // TODO false in prod
-    // isTesting = !environment.production;
     isTesting = true;
 
-    bannerId = "ca-app-pub-5672455571394042/7608904697"; // TODO replace by your id
-    interstitialId = "ca-app-pub-5672455571394042/8659096637"; // TODO replace by your id
-    rewardId = "ca-app-pub-5672455571394042/9110259444"; // TODO replace by your id
+    bannerId = "ca-app-pub-5672455571394042/7608904697"; // TODO replace by your android banner id
+    interstitialId = "ca-app-pub-5672455571394042/8659096637"; // TODO replace by your android interstitial id
+    rewardId = "ca-app-pub-5672455571394042/9110259444"; // TODO replace by your android rewards id
 
     interReadyBool = false;
     private timeout = 60000;
@@ -217,9 +216,9 @@ export class AdMobService {
 
 
                 if (Capacitor.getPlatform() === EPlatform.ios) {
-                    this.bannerId = "ca-app-pub-5672455571394042/4719851628"; // TODO replace by your id
-                    this.interstitialId = "ca-app-pub-5672455571394042/3309900750"; // TODO replace by your id
-                    this.rewardId = "ca-app-pub-5672455571394042/4707980008"; // TODO replace by your id
+                    this.bannerId = "ca-app-pub-5672455571394042/4719851628"; // TODO replace by your ios banner id
+                    this.interstitialId = "ca-app-pub-5672455571394042/3309900750"; // TODO replace by your ios interstitial id
+                    this.rewardId = "ca-app-pub-5672455571394042/4707980008"; // TODO replace by your ios rewards id
                 }
 
 
@@ -234,7 +233,7 @@ export class AdMobService {
 
                 this.initListeners();
 
-                // TODO if we want to display banner at launch
+                // TODO uncomment if we want to display banner at launch
                 // this.showBanner();
 
                 //Prepare Ad to Show

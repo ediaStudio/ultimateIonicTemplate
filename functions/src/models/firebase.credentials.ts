@@ -1,10 +1,10 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 export const firebaseConfig = {
-    apiKey: "AIzaSyDmFQuLMOsXhU--dCFA4cNKlq7fzZiX2HU",
-    authDomain: "infinity-quiz-d08fc.firebaseapp.com",
-    projectId: "infinity-quiz-d08fc",
-    storageBucket: "infinity-quiz-d08fc.appspot.com",
-    messagingSenderId: "124513284752",
-    appId: "1:124513284752:web:e2a3c34beeaed09483de15",
-    measurementId: "G-JYDJ4YHG8X"
+    apiKey: "AIzaSyCvtz_oT4bhnobxlaYtvjqHDPQYF4lIemc",
+    authDomain: "my-first-demo-a7635.firebaseapp.com",
+    projectId: "my-first-demo-a7635",
+    storageBucket: "my-first-demo-a7635.appspot.com",
+    messagingSenderId: "487211203477",
+    appId: "1:487211203477:web:1220e1094d55bdb6ac149c",
+    measurementId: "G-N8GFPS994Z"
 };

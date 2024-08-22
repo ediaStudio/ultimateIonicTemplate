@@ -16,7 +16,7 @@ import {getTransactionInfo} from "./ios_api";
 export const saveTransaction = functions.region(REGION).runWith({
     memory: "256MB",
     timeoutSeconds: 60,
-    minInstances: 1,
+    minInstances: 0,
 })
     .https.onCall(async (data: ITransaction, context) => {
 
@@ -60,7 +60,7 @@ export const saveTransaction = functions.region(REGION).runWith({
 export const transactionOnCreate = functions.region(REGION).runWith({
     memory: "256MB",
     timeoutSeconds: 60,
-    minInstances: 1,
+    minInstances: 0,
 })
     .firestore.document(`${ECollection.transactions}/{documentId}`)
     .onCreate(async (snap, context) => {

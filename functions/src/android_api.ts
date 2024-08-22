@@ -6,7 +6,7 @@ import {PACKAGE} from "@models/appInfo";
 
 // https://www.npmjs.com/package/googleapis
 const authClient = new google.auth.JWT({
-    keyFile: 'src/files/infinity-quiz-431911-00b4571fc53b.json',
+    keyFile: 'src/files/involuted-river-433305-b5-518f1ecbc972.json', // TODO Replace key file by the one you download from Private key
     scopes: ["https://www.googleapis.com/auth/androidpublisher"]
 });
 

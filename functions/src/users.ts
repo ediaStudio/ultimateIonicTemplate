@@ -60,7 +60,7 @@ export const setUserCall = functions.region(REGION)
 export const getDailyRewardCall = functions.region(REGION).runWith({
     memory: "256MB",
     timeoutSeconds: 60,
-    minInstances: 1,
+    minInstances: 0,
 })
     .https.onCall(async (data: any, context) => {
 
