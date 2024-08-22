@@ -1,4 +1,5 @@
-PREREQUIES
+# PREREQUIES
+
 Node + npm (https://nodejs.org/en/download/package-manager)
 ionic (https://ionicframework.com/docs/intro/cli)
 Angular (https://v17.angular.io/guide/setup-local)
@@ -40,6 +41,8 @@ then
 
 cd functions
 npm i
+
+# FIREBASE
 
 Then go on this link
 https://console.firebase.google.com/
@@ -170,7 +173,8 @@ then
 npx cap sync
 ( to sync all the capacitor package with android and ios file)
 
-UPDATE ICONS
+# UPDATE ICONS
+
 Then replace
 resources/icon.png
 resources/splash.png
@@ -181,10 +185,12 @@ npm run generate-icons
 to generate all icons for android ios and PWA
 (docs https://capacitorjs.com/docs/guides/splash-screens-and-icons )
 
-ADMOB
+# ADMOB
+
 (docs https://github.com/capacitor-community/admob)
 
-ADMOB ANDROID
+## ADMOB ANDROID
+
 first go to
 https://apps.admob.com/v2/home?pli=1
 Create an account if you dont already have one
@@ -238,7 +244,8 @@ add
 <string name="admob_app_id">[APP_ID]</string>
 and replace [APP_ID] by your App ID
 
-ADMOB IOS CONFIG
+## ADMOB IOS CONFIG
+
 go back to
 https://apps.admob.com/v2/home?pli=1
 Create another app but this time at the beginning
@@ -553,7 +560,8 @@ then go to
 functions/src/models/appInfo.ts
 and paste you Apple ID to > IOS_ID
 
-NOTIFICATIONS
+# NOTIFICATIONS
+
 https://capacitorjs.com/docs/guides/push-notifications-firebase
 
 That's the longest part of this tutorial. Notification are important if you wants that your user open your app often,
@@ -581,7 +589,8 @@ functions/src/notifications.ts
 
 Then you can go to purchase section
 
-ANDROID
+## ANDROID
+
 https://console.firebase.google.com/project
 open your project
 on left panel Project overview >Project settings
@@ -646,7 +655,7 @@ and paste in <application>
                 android:resource="@drawable/ic_stat_name"
         />
 
-Now lets configure for iOS
+## Now lets configure for iOS
 
 https://console.firebase.google.com/project
 open your project
@@ -734,10 +743,11 @@ Ok DONE For IOS
 
 To test notification you must use a real device
 
-PURCHASE
+# PURCHASE
+
 https://github.com/j3k0/cordova-plugin-purchase
 
-ANDROID
+## ANDROID
 
 First you need to upload a first APK to enable the configuration on in app purchase on the dashboard
 
@@ -856,7 +866,7 @@ key
 scopes: ["https://www.googleapis.com/auth/androidpublisher"]
 });
 
-for IOS
+## for IOS
 
 go ( be sure you are login first https://appstoreconnect.apple.com)
 https://appstoreconnect.apple.com/access/integrations/api/subs
@@ -892,12 +902,7 @@ and update the enum EPurchaseProducts with the product ID value for ios
 the
 product)
 
-translation
+# translation
+
 https://github.com/ngx-translate/core
-
-
-
-
-
-
 
