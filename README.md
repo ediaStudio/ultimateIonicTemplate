@@ -313,14 +313,32 @@ export const REGION = 'us-central1';
 ### Build & Deploy
 
 - then go to terminal in your IDE the root of your project and run
-- firebase login
+
+```bash
+firebase login
+```
+
 - then
-- firebase projects:list
+
+```bash
+firebase projects:list
+```
+
 - find the project you created just before and copy the "Project Number"
 - then run (replace the number by your Project number)
-- firebase use 487211203477
+-
+
+```bash
+firebase use 487211203477
+```
+
 - you should see
 - Now using project 487211203477
+
+Then create a file
+functions/src/files/apple_private_key.ts
+and inside
+export const IOS_PRIVATE_KEY = "TODO"
 
 then go to functions directory to build the backend
 
@@ -330,6 +348,13 @@ npm run build
 ```
 
 then from the root of the project run
+
+```bash
+firebase init
+```
+
+select firestore, functions, storage (watch the video)
+When it ask to overwrite , choose No (press N)
 
 ```bash
 firebase deploy
@@ -434,8 +459,6 @@ Then
 - Banner > Select
 - set Ad unit name
 - Create Ad unit
-- Copy the ad unit id ( it's the second one)
-  `ca-app-pub-5672455571394042/7277193208`
 - Done
 
 ### Interstitial ads
@@ -444,8 +467,6 @@ Then
 - Interstitial > Select
 - set Ad unit name
 - Create Ad unit
-- copy the ad unit id (the second one)
-  `ca-app-pub-5672455571394042/7507357565`
 - Done
 
 ### Rewards ads
@@ -453,8 +474,6 @@ Then
 - Add ad unit
 - Rewarded > Select
 - set Ad unit name
-- copy the ad unit id (the second one)
-  `ca-app-pub-5672455571394042/5771969021`
 
 ### Android Admob Config
 
@@ -465,7 +484,7 @@ Then
 
 - open file
   `android/app/src/main/AndroidManifest.xml`
-- paste
+- paste ( in <application>)
 
 ```xml
 
@@ -509,11 +528,12 @@ replace [APP_ID] by your App ID
 
 ```xml
 
-<key>GADIsAdManagerApp</key>
-<true/>
 <key>GADApplicationIdentifier</key>
 <string>[APP_ID]</string>
+<key>GADIsAdManagerApp</key>
+<true/>
 <key>NSUserTrackingUsageDescription</key>
+<string>This identifier will be used to deliver personalized ads to you.</string>
 ```
 
 - also add these line to optimize ads displayed on iOS.
@@ -522,7 +542,6 @@ replace [APP_ID] by your App ID
 
 ```xml
 
-<string>This identifier will be used to deliver personalized ads to you.</string>
 <key>SKAdNetworkItems</key>
 <array>
 <dict>
@@ -727,6 +746,8 @@ replace [APP_ID] by your App ID
 - then open the file
   `src/app/shared/services/adMob-service.ts`
 - Replace by the id you get before when you create ad Units
+  (it should look like this)
+  `ca-app-pub-5672455571394042/5771969021`
 
 ```ts
 bannerId = "ca-app-pub-5672455571394042/7608904697"; // TODO replace by your android banner id
@@ -749,6 +770,7 @@ if (Capacitor.getPlatform() === EPlatform.ios) {
 ⚠️ You need to do this or your app will not be approved by apple because of App Tracking Transparency:
 [Admob](https://apps.admob.com/v2/privacymessaging?pli=1)
 
+- Go to https://admob.google.com/v2/privacymessaging
 - GDPR > manage > Create message
 - IDFA > manage > create message be sure its published
 
@@ -862,6 +884,8 @@ Before continue with notification and in app purchase you need to create your ap
 - Continue
 - Register
 
+Create app On Appstoreconnect
+
 - Then you need to create your app on ios
   [Appstoreconnect](https://appstoreconnect.apple.com/apps)
 - click on +
@@ -965,7 +989,7 @@ id 'com.google.gms.google-services'
     implementation platform('com.google.firebase:firebase-bom:33.1.2')
 ```
 
-- then to firebase console click "Next" then "Continue to console"
+- then to firebase console click "Next", "Next" then "Continue to console"
 
 Ok now let's add notification icon for android
 
@@ -1085,9 +1109,15 @@ npx cap update ios
   [Push notifications firebase](https://capacitorjs.com/docs/guides/push-notifications-firebase)
 - Section `Add Initialization Code`
 
+Then on Xcode go to
+Signing & Capabilities
+Click on + Capability
+Select Push notification by double click on it
+
 DONE For IOS
 
-To test notification you must use a real device
+To test notification you must use a real device, you can just plug a cable and then on Xcode select your real device
+And to test notification click on the button "Test Notification" on the app home page
 
 ## Purchase
 
@@ -1225,8 +1255,7 @@ const authClient = new google.auth.JWT({
 
 ### iOS API
 
-- go ( be sure you are login first https://appstoreconnect.apple.com)
-  [Appstoreconnect](https://appstoreconnect.apple.com/access/integrations/api/subs)
+- go [Appstoreconnect](https://appstoreconnect.apple.com/access/integrations/api/subs)
 - copy issuer ID at the top and paste it in `functions/src/ios_api.ts`
 
 ```ts
@@ -1235,7 +1264,7 @@ const issuerId = "561c3c09-e608-406e-86a9-818ce8d424b3";
 
 - From In-App Purchase page
 - Click to the + next to"Active"
-- set a name ex "myPurchaseKey"
+- set a name ex "myPurchaseKey" then Generate
 - copy KEY ID and paste it in `functions/src/ios_api.ts`
 
 ```ts
@@ -1295,5 +1324,3 @@ Project Link: [https://github.com/ediaStudio/ultimateIonicTemplate](https://gith
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
 
 [Angular-url]: https://angular.io/
-
-

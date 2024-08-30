@@ -7,8 +7,8 @@ import {ITransactionIOS} from "@models/transaction";
 // https://github.com/apple/app-store-server-library-node
 // TODO replace by your Issuer ID you can find here
 // https://appstoreconnect.apple.com/access/integrations/api/subs
-const issuerId = "561c3c09-e608-406e-86a9-818ce8d424b3";
-const keyId = "HD9ZRUSHXN";
+const issuerId = "561c3c09-e608-406e-86a9-818ce8d424b3"; // TODO replace
+const keyId = "HD9ZRUSHXN"; // TODO replace
 const bundleId = PACKAGE;
 // inside SubscriptionKey_HD9ZRUSHXN.p8
 const encodedKey = IOS_PRIVATE_KEY;

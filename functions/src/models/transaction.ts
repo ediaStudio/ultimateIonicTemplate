@@ -1,8 +1,8 @@
 export const DAILY_REWARD_CREDITS = 100; // 60
 
 export enum EPurchaseProducts {
-    credits1Android = "credits1",
-    credits1IOS = "credits1_ios",
+    credits1Android = "credits1", // TODO replace by your product id for android
+    credits1IOS = "credits1_ios", // TODO replace by your product id for ios
     test_consumable = 'test-consumable',
     test_subscription = 'test-subscription',
     test_subscription_active = 'test-subscription-active'
