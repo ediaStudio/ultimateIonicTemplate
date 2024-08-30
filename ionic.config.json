@@ -1,0 +1,7 @@
+{
+  "name": "infinityQuiz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

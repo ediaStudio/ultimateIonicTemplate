@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">templateApp</string>
+    <string name="title_activity_main">templateApp</string>
+    <string name="package_name">com.edia.template</string>
+    <string name="custom_url_scheme">com.edia.template</string>
+    // replace by your app ID
+    <string name="admob_app_id">ca-app-pub-5672455571394042~6051741449</string>
+</resources>

@@ -1,0 +1,74 @@
+<ion-app>
+    <ion-split-pane contentId="main-content">
+        <ion-menu contentId="main-content" type="overlay">
+            <ion-content>
+                <ion-list id="inbox-list">
+                    <ion-list-header>
+                        <ion-label>
+                            {{"templateApp" | translate}}
+                        </ion-label>
+                    </ion-list-header>
+
+                    <!--                    Select Language-->
+                    <ion-menu-toggle (click)="openLanguage()" auto-hide="false">
+                        <ion-item detail="false" lines="none">
+                            <ion-icon name="globe" slot="start"></ion-icon>
+                            <ion-label>Languages</ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+
+
+                    <!--                     in app purchase-->
+                    <ion-menu-toggle (click)="openPurchaseModal()" *ngIf="currentUser" auto-hide="false">
+                        <ion-item detail="false" lines="none">
+                            <ion-icon name="storefront" slot="start"></ion-icon>
+                            <ion-label>
+                                {{"shop" | translate}}
+                            </ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+
+
+                    <!--                    Rate us-->
+                    <ion-menu-toggle (click)="rateUs()" auto-hide="false">
+                        <ion-item detail="false" lines="none">
+                            <ion-icon name="star" slot="start"></ion-icon>
+                            <ion-label>
+                                {{"rateUs" | translate}}
+                            </ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+
+                    <!--                     share-->
+                    <ion-menu-toggle (click)="showShareOptions()" auto-hide="false">
+                        <ion-item detail="false" lines="none">
+                            <ion-icon name="share-social" slot="start"></ion-icon>
+                            <ion-label>
+                                {{"share" | translate}}
+                            </ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+
+                    <!--                    Dark mode -->
+                    <ion-item detail="false" lines="none">
+                        <ion-icon *ngIf="!darkMode" name="sunny" slot="start"></ion-icon>
+                        <ion-icon *ngIf="darkMode" name="moon" slot="start"></ion-icon>
+                        <ion-label>{{"darkMode" | translate}}</ion-label>
+                        <ion-toggle (ionChange)="darkModeChange()"
+                                    [checked]="darkMode"
+                                    color="primary"
+                                    mode="ios" slot="end"></ion-toggle>
+                    </ion-item>
+
+                </ion-list>
+            </ion-content>
+            <ion-footer [class.ads]="bannerVisible"
+                        class="ion-padding">
+                {{environment.version}}
+                <br/>
+                {{currentUser?.userId}}
+            </ion-footer>
+        </ion-menu>
+        <ion-router-outlet id="main-content"></ion-router-outlet>
+    </ion-split-pane>
+</ion-app>
