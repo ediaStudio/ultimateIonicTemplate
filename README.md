@@ -1,6 +1,5 @@
 <a id="readme-top"></a>
 
-
 <div align="center">
 
   <a href="https://ionicframework.com/docs">
