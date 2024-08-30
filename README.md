@@ -335,11 +335,6 @@ firebase use 487211203477
 - you should see
 - Now using project 487211203477
 
-Then create a file
-functions/src/files/apple_private_key.ts
-and inside
-export const IOS_PRIVATE_KEY = "TODO"
-
 then go to functions directory to build the backend
 
 ```bash
