@@ -1310,15 +1310,17 @@ Don't forget to update the status of your app on Admob after it's approved by Go
 - App settings > App store detail > Add
 - and add your app
 
+❤️❤️❤️❤️
 I've spent time creating this template and the tutorial video, and I'm giving them to you for free.
 This is the same template I use in my own apps.
+
 If you'd like to support me and show your appreciation, I’m not asking for money.
-But if you have a moment, you can leave a review for my app—it really helps with rankings.
+
+But if you have a moment, you can leave a review for my app, it really helps me with rankings.
+
 If you have an app of your own, I’d be happy to return the favor by downloading and rating it on both Android and iOS.
 
 It's a Quiz game using AI to test your knowledge:
-
-<br/>
 
 iOS ➡️ [AppStore link](https://apps.apple.com/app/id6608979195)
 <br/>
