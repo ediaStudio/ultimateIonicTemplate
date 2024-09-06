@@ -13,13 +13,20 @@ alt="Logo" width="260" height="80">
 
   <p align="center">
 <b>✅ iOS<b/>
+<a href="https://apps.apple.com/app/id6608979195">
+App using this template on AppStore
+</a>
+
 <br />
 <b>✅ Android<b/>
+<a href="https://play.google.com/store/apps/details?id=ai.quiz.infinity">
+App using this template on PlayStore
+</a>
 <br />
 
 [![Angular][Angular.io]][Angular-url]
 <br />
-<a href="https://youtu.be/Nw1s_7r7hJM">View Demo</a>
+<a href="https://youtu.be/Nw1s_7r7hJM">View Demo video</a>
 ·
 <a href="https://github.com/ediaStudio/ultimateIonicTemplate/issues/new?labels=bug">
 Report Bug</a>
@@ -117,11 +124,13 @@ This template includes all the followings for your mobile hybrid app:
 
 ### Installation
 
-run
+To install firebase run:
 
 ```bash
 npm install -g firebase
 ```
+
+You also need to install firebase-tools:
 
 ```bash
 npm install -g firebase-tools
@@ -343,6 +352,8 @@ npm run build
 ```
 
 then from the root of the project run
+
+we need to finit firebase
 
 ```bash
 firebase init
@@ -905,7 +916,7 @@ Create app On Appstoreconnect
 [Push notifications firebase](https://capacitorjs.com/docs/guides/push-notifications-firebase)
 
 That's the longest part of this tutorial. Notification are important if you wants that your user open your app often,
-It helps for the rankins of your app on the store. But this is not mandatory.
+It helps for the rankins of your app on the store. Even if it's not mandatory, i highly suggest you to implement it.
 We need to setup Notification before in app purchase or the app not gonna work.
 
 ### Remove notifications
@@ -1171,7 +1182,8 @@ version is higher than 6.1.1, if not just change it to 7.0.0 ( or your app not g
   `Build > Generate signed Bundle / APK(s)`
 - Choose Android App Bundle
 - Next
-- Select your Key store path
+- Select your Key store
+  path ( [Generate Keystore](https://stackoverflow.com/questions/3997748/how-can-i-create-a-keystore))
 - Write the Key store password + Key alias and Key password
 - Click Next
 - select release
@@ -1291,7 +1303,21 @@ const keyId = "HD9ZRUSHXN";
 Then you can test your app on emulators, the in app purchase should appears.
 If you wanna deploy and test on a real device do as follow:
 
+Don't forget to update the status of your app on Admob after it's approved by Google & Apple
 
+- go to admob
+- App settings > App store detail > Add
+- and add your app
+
+I've spent time creating this template and the tutorial video, and I'm giving them to you for free.
+This is the same template I use in my own apps.
+If you'd like to support me and show your appreciation, I’m not asking for money.
+But if you have a moment, you can leave a review for my app—it really helps with rankings.
+If you have an app of your own, I’d be happy to return the favor by downloading and rating it on both Android and iOS.
+
+It's a Quiz game using AI to test your knowledge:
+iOS ➡️ [AppStore link](https://apps.apple.com/app/id6608979195)
+Android ➡️ [PlayStore link](https://play.google.com/store/apps/details?id=ai.quiz.infinity)
 
 <!-- LICENSE -->
 

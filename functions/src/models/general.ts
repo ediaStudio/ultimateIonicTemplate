@@ -1,8 +1,8 @@
 export const langStorage = "lang";
 export const darkStorage = "dark";
 export const rateUsStorage = "rateUs";
-export const ADS_REWARD_CREDITS = 60;
-export const REGION = 'us-central1';
+export const ADS_REWARD_CREDITS = 1;
+export const REGION = 'us-central1'; // TODO replace by your region
 export const EMULATORS_PORT = 8001;
 export const ONE_DAY_MS = 86400000;
 
