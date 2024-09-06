@@ -18,6 +18,7 @@ App using this template on AppStore
 </a>
 
 <br />
+<br />
 <b>✅ Android<b/>
 <a href="https://play.google.com/store/apps/details?id=ai.quiz.infinity">
 App using this template on PlayStore
@@ -1316,7 +1317,11 @@ But if you have a moment, you can leave a review for my app—it really helps wi
 If you have an app of your own, I’d be happy to return the favor by downloading and rating it on both Android and iOS.
 
 It's a Quiz game using AI to test your knowledge:
+
+<br/>
 iOS ➡️ [AppStore link](https://apps.apple.com/app/id6608979195)
+<br/>
+<br/>
 Android ➡️ [PlayStore link](https://play.google.com/store/apps/details?id=ai.quiz.infinity)
 
 <!-- LICENSE -->
