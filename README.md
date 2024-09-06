@@ -354,7 +354,7 @@ npm run build
 
 then from the root of the project run
 
-we need to finit firebase
+we need to init firebase first
 
 ```bash
 firebase init
@@ -922,9 +922,66 @@ We need to setup Notification before in app purchase or the app not gonna work.
 
 ### Remove notifications
 
-If you don't need push notification in your app, you can just delete:
+If you don't need push notification in your app, you can just:
+
+delete
 
 `src/app/shared/services/notifications.service.ts`
+
+then in `src/app/app.component.ts`
+
+delete
+
+```ts
+`private notificationsService: NotificationsService,`
+```
+
+also delete
+
+```ts
+setTimeout(() => {
+  this.notificationsService.manageNotifications();
+}, 5000)
+```
+
+then in `src/app/home/home.component.ts`
+
+delete
+
+```ts
+    `private notificationsService: NotificationsService,`
+```
+
+delete
+
+```ts
+async
+testNotification()
+{
+  await this.miscService.presentLoadingWithOptions();
+  try {
+    await this.notificationsService.testNotificationCall();
+  } catch (e: any) {
+    this.miscService.displayError(e);
+  }
+  this.miscService.dismissLoading();
+}
+```
+
+in `src/app/home/home.component.html`
+
+delete
+
+```html
+
+<ion-button (click)="testNotification()"
+            class="ion-margin-top"
+            color="secondary"
+            expand="full"
+            shape="round">
+  Test Notification
+</ion-button>
+```
 
 - then in
   `capacitor.config.ts`
@@ -1302,9 +1359,19 @@ const keyId = "HD9ZRUSHXN";
   ios
 
 Then you can test your app on emulators, the in app purchase should appears.
-If you wanna deploy and test on a real device do as follow:
 
-Don't forget to update the status of your app on Admob after it's approved by Google & Apple
+⚠⚠⚠ IMPORTANT ⚠⚠⚠
+
+in `src/app/shared/services/adMob-service.ts`
+don't forget to set
+
+```ts
+isTesting = false;
+```
+
+before build and deploying your app to the store, or user gonna see the tests ads, and it not gonna make any money
+
+Also don't forget to update the status of your app on Admob after it's approved by Google & Apple
 
 - go to admob
 - App settings > App store detail > Add
@@ -1338,9 +1405,11 @@ Distributed under the MIT License.
 
 ## Contact
 
-Edia Studio - [@youtube](https://twitter.com/twitter_handle) - contact@ediastudio.com
+Email - [@youtube](https://twitter.com/twitter_handle) - contact@ediastudio.com
 
-Project Link: [https://github.com/ediaStudio/ultimateIonicTemplate](https://github.com/ediaStudio/ultimateIonicTemplate)
+My Youtube channel - [@youtube](https://twitter.com/twitter_handle) - contact@ediastudio.com
+
+My Instagram - [@youtube](https://twitter.com/twitter_handle) - contact@ediastudio.com
 
 
 <p align="right">(<a href="#readme-top">back to top ⬆️</a>)</p>
