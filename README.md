@@ -39,15 +39,22 @@ Request Feature</a>
 <br />
 <br />
 
+
+In the video tutorial i'm using WebStorm ( paid version ), but you can use Visual Studio (which is free) instead
+<br />
+Here the link to download it:
+<br />
+[Download Visual Studio](https://code.visualstudio.com/Download)
+
 ## Table of Contents
 
 * [✨ Features](#features)
 * [🔧 Prerequisites](#prerequisites)
-    * [Installation](#installation)
+  * [Installation](#installation)
 * [👨‍💻 Create developers account](#Create-developers-account)
 * [🏷️ Package name](#Package-name)
 * [🔥 Setup Firebase](#setup-firebase)
-    * [Create project](#create-project)
+  * [Create project](#create-project)
     * [Add web](#add-web)
     * [Authentication](#authentication)
     * [Cloud firestore](#Cloud-firestore)
@@ -164,8 +171,9 @@ firebase --version
 For this tutorial, it's assumed that you already have a developer account on Google Play ($25 lifetime fee).\
 [Create developer account on Android](https://support.google.com/googleplay/android-developer/answer/6112435)
 
-If you also want to release your app on iOS, you'll need a developer account on the Apple Store ($99 per year) and a Mac
-with Xcode installed.\
+If you also want to release your app on iOS, you'll need a developer account on the Apple Store ($99 per year)
+and a Mac with Xcode installed.\
+(you don't need to pay right now, you can still follow this tutorial for iOS without paying, everything gonna work)\
 [Create developer account on iOS](https://developer.apple.com/programs/enroll/)
 
 ## Package name
@@ -1036,9 +1044,7 @@ Then you can go to purchase section [💰 Purchase](#Purchase)
         classpath 'com.google.gms:google-services:4.4.0'
 ```
 
-android/app/build.gradle
-
-- add this to the top
+- add this to the top of `android/app/build.gradle
 
 ```gradle
 plugins {
@@ -1047,7 +1053,7 @@ id 'com.google.gms.google-services'
 }
 ```
 
-- and this to dependencies
+- and this to dependencies in `android/app/build.gradle`
 
 ```gradle
     implementation platform('com.google.firebase:firebase-bom:33.1.2')
@@ -1163,6 +1169,10 @@ First you gonna need a certificate Signing Request.
   section `Add the Firebase SDK via CocoaPods`
 - then in the terminal run
 
+- Then go to `signing & Capabilities`
+- Click on +
+- And double click on `Push notifications`
+
 ```bash
 npx cap update ios
 ```
@@ -1185,7 +1195,7 @@ And to test notification click on the button "Test Notification" on the app home
 
 ## Purchase
 
-[Cordova plugin purchase](https://github.com/j3k0/cordova-plugin-purchase)
+For the purchase i use: [Cordova plugin purchase](https://github.com/j3k0/cordova-plugin-purchase)
 
 ### Android purchase
 

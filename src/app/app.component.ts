@@ -55,7 +55,7 @@ export class AppComponent {
                 private adMobService: AdMobService,
                 private purchaseService: PurchaseService,
                 private modalController: ModalController,
-                private notificationsService: NotificationsService,
+                private notificationsService: NotificationsService, // If you don't need notification you can remove
                 private modalService: ModalService,
                 private platform: Platform,
                 private userService: UserService,
@@ -229,6 +229,7 @@ export class AppComponent {
             this.pressBackButton();
             this.db = getFirestore(firebaseApp);
             await this.initializeFirebase();
+            // If you don't need notification you can remove
             setTimeout(() => {
                 this.notificationsService.manageNotifications();
             }, 5000)

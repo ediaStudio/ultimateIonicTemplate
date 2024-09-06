@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     constructor(
         private adMobService: AdMobService,
         private miscService: MiscService,
-        private notificationsService: NotificationsService,
+        private notificationsService: NotificationsService, // If you don't need notification you can remove
         private translate: TranslateService) {
         this.adMobService.getBannerVisible()
             .subscribe(bannerVisible => {
@@ -41,6 +41,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.subscription.complete();
     }
 
+    // If you don't need notification you can remove
     async testNotification() {
         await this.miscService.presentLoadingWithOptions();
         try {
