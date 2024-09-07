@@ -99,30 +99,56 @@ This template includes all the followings for your mobile hybrid app:
 
 ✅ [Translation](https://github.com/ngx-translate/core)
 <br/>
+Allows you to target a global audience by supporting multiple languages.
+<br />
 ✅ [Dark mode](http://ionicframework.com/docs/theming/)
 <br/>
+Enhances user experience with theme customization, appealing to users who prefer low-light settings.
+<br />
 ✅ [Share](https://capacitorjs.com/docs/apis/share)
 <br/>
+Lets users easily share content, increasing app visibility and engagement.
+<br />
 ✅ [In app Review](https://github.com/capacitor-community/in-app-review)
 <br/>
+Encourages users to leave reviews directly in the app, boosting credibility and app store ranking.
+<br />
 ✅ [AdMob (Banner,Interstitial,Rewards)](https://github.com/capacitor-community/admob)
 <br/>
+Monetizes the app with multiple ad formats, offering opportunities to increase revenue.
+<br />
 ✅ [In App Purchase](https://github.com/j3k0/cordova-plugin-purchase)
 <br/>
+Enables seamless in-app purchases, offering users premium features and boosting monetization.
+<br />
 ✅ Daily Reward
+<br/>
+Increases user retention by rewarding daily logins, encouraging regular app engagement.
 <br/>
 ✅ [Push Notification](https://capacitorjs.com/docs/guides/push-notifications-firebase)
 <br/>
+Keeps users engaged with real-time updates, reminders, and offers, driving app usage.
+<br />
 ✅ [Firebase Auth](https://firebase.google.com/docs/auth/web/anonymous-auth)
 <br/>
+Provides secure, easy login options, enhancing user convenience with anonymous or registered sign-ins.
+<br />
 ✅ [Firebase Functions (Backend)](https://firebase.google.com/docs/functions)
 <br/>
+Scales backend logic effortlessly, enabling complex app functionalities without maintaining a server.
+<br />
 ✅ [Cloud Firestore (Database)](https://firebase.google.com/docs/firestore)
 <br/>
+Provides real-time data syncing and storage, ensuring quick and reliable access to user data.
+<br />
 ✅ [Firebase storage](https://firebase.google.com/docs/storage)
 <br/>
+Offers secure, scalable file storage, perfect for managing user-generated content.
+<br />
 ✅ [iOS + Android](https://ionicframework.com/docs/cli/commands/capacitor-add)
 <br/>
+Targets both major mobile platforms, maximizing the app's potential audience reach.
+<br />
 
 ## Prerequisites
 
