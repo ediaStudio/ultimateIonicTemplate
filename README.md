@@ -40,7 +40,8 @@ Request Feature</a>
 <br />
 
 
-In the video tutorial i'm using WebStorm ( paid version ), but you can use Visual Studio (which is free) instead
+In the video tutorial i'm using WebStorm ( not free ) to open the files, but you can use Visual Studio (which is
+free) instead
 <br />
 Here the link to download it:
 <br />
