@@ -1444,9 +1444,11 @@ Distributed under the MIT License.
 
 Email - [@youtube](https://twitter.com/twitter_handle) - contact@ediastudio.com
 
-My Youtube channel - [@youtube](https://twitter.com/twitter_handle) - contact@ediastudio.com
+[//]: # (My Youtube channel - [@youtube]&#40;https://twitter.com/twitter_handle&#41; - contact@ediastudio.com)
 
-My Instagram - [@youtube](https://twitter.com/twitter_handle) - contact@ediastudio.com
+[//]: # ()
+
+[//]: # (My Instagram - [@youtube]&#40;https://twitter.com/twitter_handle&#41; - contact@ediastudio.com)
 
 
 <p align="right">(<a href="#readme-top">back to top ⬆️</a>)</p>
