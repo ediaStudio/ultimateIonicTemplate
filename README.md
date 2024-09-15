@@ -1442,11 +1442,9 @@ Distributed under the MIT License.
 
 ## Contact
 
-Email - [@youtube](https://twitter.com/twitter_handle) - contact@ediastudio.com
+Email - contact@ediastudio.com
 
-[//]: # (My Youtube channel - [@youtube]&#40;https://twitter.com/twitter_handle&#41; - contact@ediastudio.com)
-
-[//]: # ()
+[//]: # (My Youtube channel - [@youtube]https://www.youtube.com/@devaffranchi)
 
 [//]: # (My Instagram - [@youtube]&#40;https://twitter.com/twitter_handle&#41; - contact@ediastudio.com)
 
