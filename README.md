@@ -1444,7 +1444,7 @@ Distributed under the MIT License.
 
 Email - contact@ediastudio.com
 
-# (My Youtube channel - [@youtube]https://www.youtube.com/@devaffranchi)
+(My Youtube channel - [@youtube]https://www.youtube.com/@devaffranchi)
 
 [//]: # (My Instagram - [@youtube]&#40;https://twitter.com/twitter_handle&#41; - contact@ediastudio.com)
 
