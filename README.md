@@ -41,7 +41,7 @@ Request Feature</a>
 
 ## Video Tutorial
 
-The video Tutorial - [Video Tutorial](https://www.devaffranchi.com/cadeau-offert)
+The video Tutorial (video is in english) - [Video Tutorial](https://www.devaffranchi.com/cadeau-offert)
 <br />
 
 In the video tutorial i'm using WebStorm ( not free ) to open the files, but you can use Visual Studio (which is
