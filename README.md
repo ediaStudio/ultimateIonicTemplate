@@ -39,11 +39,14 @@ Request Feature</a>
 <br />
 <br />
 
+## Video Tutorial
+
+The video Tutorial - [Video Tutorial](https://www.devaffranchi.com/cadeau-offert)
+<br />
+<br />
 
 In the video tutorial i'm using WebStorm ( not free ) to open the files, but you can use Visual Studio (which is
-free) instead
-<br />
-Here the link to download it:
+free) :
 <br />
 [Download Visual Studio](https://code.visualstudio.com/Download)
 
