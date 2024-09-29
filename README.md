@@ -41,7 +41,7 @@ Request Feature</a>
 
 ## Video Tutorial
 
-The video Tutorial (video is in english) - [Video Tutorial](https://www.devaffranchi.com/cadeau-offert)
+The video Tutorial (video is in english) - [Video Tutorial](https://mobileacademy.systeme.io/free-gift)
 <br />
 
 In the video tutorial i'm using WebStorm ( not free ) to open the files, but you can use Visual Studio (which is
@@ -1446,9 +1446,11 @@ Distributed under the MIT License.
 
 Email - contact@ediastudio.com
 
-My Youtube channel - [https://www.youtube.com/@devaffranchi](https://www.youtube.com/@devaffranchi)
+[//]: # (My Youtube channel - [https://www.youtube.com/@devaffranchi]&#40;https://www.youtube.com/@devaffranchi&#41;)
 
-My Instagram - [https://www.instagram.com/devaffranchi/](https://www.instagram.com/devaffranchi/)
+[//]: # ()
+
+[//]: # (My Instagram - [https://www.instagram.com/devaffranchi/]&#40;https://www.instagram.com/devaffranchi/&#41;)
 
 <p align="right">(<a href="#readme-top">back to top ⬆️</a>)</p>
 
