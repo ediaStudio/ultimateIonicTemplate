@@ -41,7 +41,7 @@ Request Feature</a>
 
 ## Video Tutorial
 
-The video Tutorial (video is in english) - [Video Tutorial](https://mobileacademy.systeme.io/free-gift)
+The video Tutorial - [Video Tutorial](https://mobileacademy.systeme.io/free-gift)
 <br />
 
 In the video tutorial i'm using WebStorm ( not free ) to open the files, but you can use Visual Studio (which is
